@@ -40,7 +40,7 @@ spec:
         - name: ORDERER_GENERAL_LISTENADDRESS
           value: 0.0.0.0
         - name: ORDERER_GENERAL_LISTENPORT
-          value: "31010"
+          value: "7050"
         - name: ORDERER_GENERAL_LOGLEVEL
           value: debug
         - name: ORDERER_GENERAL_LOCALMSPDIR
@@ -141,13 +141,13 @@ spec:
         - name: CORE_PEER_ID
           value: org1peer1
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org1peer1:30110
+          value: blockchain-org1peer1:7051
         - name: CORE_PEER_LISTENADDRESS
-          value: 0.0.0.0:30110
+          value: 0.0.0.0:7051
         - name: CORE_PEER_EVENTS_ADDRESS
-          value: 0.0.0.0:30111
+          value: 0.0.0.0:7052
         - name: CORE_PEER_GOSSIP_BOOTSTRAP
-          value: blockchain-org1peer1:30110
+          value: blockchain-org1peer1:7051
         - name: CORE_PEER_GOSSIP_ORGLEADER
           value: "false"
         - name: CORE_PEER_GOSSIP_SKIPHANDSHAKE
@@ -185,7 +185,7 @@ spec:
         - name: FABRIC_CFG_PATH
           value: /etc/hyperledger/fabric/
         - name: ORDERER_URL
-          value: blockchain-orderer:31010
+          value: blockchain-orderer:7050
         - name: GODEBUG
           value: "netdns=go"
         - name: CORE_VM_DOCKER_ATTACHSTDOUT
@@ -230,13 +230,13 @@ spec:
         - name: CORE_PEER_NETWORKID
           value: nid1
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org2peer1:30210
+          value: blockchain-org2peer1:8051
         - name: CORE_PEER_LISTENADDRESS
-          value: 0.0.0.0:30210
+          value: 0.0.0.0:8051
         - name: CORE_PEER_EVENTS_ADDRESS
-          value: 0.0.0.0:30211
+          value: 0.0.0.0:8052
         - name: CORE_PEER_GOSSIP_BOOTSTRAP
-          value: blockchain-org2peer1:30210
+          value: blockchain-org2peer1:8051
         - name: CORE_PEER_GOSSIP_ORGLEADER
           value: "false"
         - name: CORE_PEER_GOSSIP_SKIPHANDSHAKE
@@ -274,7 +274,7 @@ spec:
         - name: FABRIC_CFG_PATH
           value: /etc/hyperledger/fabric/
         - name: ORDERER_URL
-          value: blockchain-orderer:31010
+          value: blockchain-orderer:7050
         - name: GODEBUG
           value: "netdns=go"
         - name: CORE_VM_DOCKER_ATTACHSTDOUT
@@ -320,13 +320,13 @@ spec:
         - name: CORE_PEER_NETWORKID
           value: nid1
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org3peer1:30310
+          value: blockchain-org3peer1:9051
         - name: CORE_PEER_LISTENADDRESS
-          value: 0.0.0.0:30310
+          value: 0.0.0.0:9051
         - name: CORE_PEER_EVENTS_ADDRESS
-          value: 0.0.0.0:30311
+          value: 0.0.0.0:9052
         - name: CORE_PEER_GOSSIP_BOOTSTRAP
-          value: blockchain-org3peer1:30310
+          value: blockchain-org3peer1:9051
         - name: CORE_PEER_GOSSIP_ORGLEADER
           value: "false"
         - name: CORE_PEER_GOSSIP_SKIPHANDSHAKE
@@ -364,7 +364,7 @@ spec:
         - name: FABRIC_CFG_PATH
           value: /etc/hyperledger/fabric/
         - name: ORDERER_URL
-          value: blockchain-orderer:31010
+          value: blockchain-orderer:7050
         - name: GODEBUG
           value: "netdns=go"
         - name: CORE_VM_DOCKER_ATTACHSTDOUT
@@ -410,13 +410,13 @@ spec:
         - name: CORE_PEER_NETWORKID
           value: nid1
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org4peer1:30410
+          value: blockchain-org4peer1:10051
         - name: CORE_PEER_LISTENADDRESS
-          value: 0.0.0.0:30410
+          value: 0.0.0.0:10051
         - name: CORE_PEER_EVENTS_ADDRESS
-          value: 0.0.0.0:30411
+          value: 0.0.0.0:10052
         - name: CORE_PEER_GOSSIP_BOOTSTRAP
-          value: blockchain-org4peer1:30410
+          value: blockchain-org4peer1:10051
         - name: CORE_PEER_GOSSIP_ORGLEADER
           value: "false"
         - name: CORE_PEER_GOSSIP_SKIPHANDSHAKE
@@ -454,7 +454,7 @@ spec:
         - name: FABRIC_CFG_PATH
           value: /etc/hyperledger/fabric/
         - name: ORDERER_URL
-          value: blockchain-orderer:31010
+          value: blockchain-orderer:7050
         - name: GODEBUG
           value: "netdns=go"
         - name: CORE_VM_DOCKER_ATTACHSTDOUT

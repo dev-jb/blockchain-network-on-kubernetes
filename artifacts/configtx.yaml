@@ -47,7 +47,7 @@ Organizations:
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
             - Host: blockchain-org1peer1
-              Port: 30110
+              Port: 7051
 
     - &Org2
         # DefaultOrg defines the organization which is used in the sampleconfig
@@ -69,7 +69,7 @@ Organizations:
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
             - Host: blockchain-org2peer1
-              Port: 30210
+              Port: 8051
 
     - &Org3
         # DefaultOrg defines the organization which is used in the sampleconfig
@@ -91,7 +91,7 @@ Organizations:
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
             - Host: blockchain-org3peer1
-              Port: 30310
+              Port: 9051
 
     - &Org4
         # DefaultOrg defines the organization which is used in the sampleconfig
@@ -113,7 +113,7 @@ Organizations:
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
             - Host: blockchain-org4peer1
-              Port: 30410
+              Port: 10051
               
 ################################################################################
 #
@@ -130,7 +130,7 @@ Orderer: &OrdererDefaults
     OrdererType: solo
 
     Addresses:
-        - blockchain-orderer:31010
+        - blockchain-orderer:7050
 
     # Batch Timeout: The amount of time to wait before creating a batch
     BatchTimeout: 2s

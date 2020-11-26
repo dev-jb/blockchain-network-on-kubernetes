@@ -29,8 +29,8 @@ spec:
   ports:
   - protocol: TCP
     nodePort: 31010
-    targetPort: 31010
-    port: 31010
+    targetPort: 7050
+    port: 7050
     name: grpc
 ---
 apiVersion: v1
@@ -46,13 +46,13 @@ spec:
   ports:
   - protocol: TCP
     nodePort: 30110
-    targetPort: 30110
-    port: 30110
+    targetPort: 7051
+    port: 7051
     name: grpc
   - protocol: TCP
     nodePort: 30111
-    targetPort: 30111
-    port: 30111
+    targetPort: 7052
+    port: 7052
     name: events
 ---
 apiVersion: v1
@@ -68,13 +68,13 @@ spec:
   ports:
   - protocol: TCP
     nodePort: 30210
-    targetPort: 30210
-    port: 30210
+    targetPort: 8051
+    port: 8051
     name: grpc
   - protocol: TCP
     nodePort: 30211
-    targetPort: 30211
-    port: 30211
+    targetPort: 8052
+    port: 8052
     name: events
 
 ---
@@ -91,13 +91,13 @@ spec:
   ports:
   - protocol: TCP
     nodePort: 30310
-    targetPort: 30310
-    port: 30310
+    targetPort: 9051
+    port: 9051
     name: grpc
   - protocol: TCP
     nodePort: 30311
-    targetPort: 30311
-    port: 30311
+    targetPort: 9052
+    port: 9052
     name: events
 
 ---
@@ -114,11 +114,11 @@ spec:
   ports:
   - protocol: TCP
     nodePort: 30410
-    targetPort: 30410
-    port: 30410
+    targetPort: 10051
+    port: 10051
     name: grpc
   - protocol: TCP
     nodePort: 30411
-    targetPort: 30411
-    port: 30411
+    targetPort: 10052
+    port: 10052
     name: events

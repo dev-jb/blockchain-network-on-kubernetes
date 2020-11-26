@@ -31,7 +31,7 @@ spec:
         - name: CORE_PEER_LOCALMSPID
           value: Org1MSP
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org1peer1:30110
+          value: blockchain-org1peer1:7051
         - name: GODEBUG
           value: "netdns=go"
         volumeMounts:
@@ -54,7 +54,7 @@ spec:
         - name: CORE_PEER_LOCALMSPID
           value: Org2MSP
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org2peer1:30210
+          value: blockchain-org2peer1:8051
         - name: GODEBUG
           value: "netdns=go"
         volumeMounts:
@@ -77,7 +77,7 @@ spec:
         - name: CORE_PEER_LOCALMSPID
           value: Org3MSP
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org3peer1:30310
+          value: blockchain-org3peer1:9051
         - name: GODEBUG
           value: "netdns=go"
         volumeMounts:
@@ -100,7 +100,7 @@ spec:
         - name: CORE_PEER_LOCALMSPID
           value: Org4MSP
         - name: CORE_PEER_ADDRESS
-          value: blockchain-org4peer1:30410
+          value: blockchain-org4peer1:10051
         - name: GODEBUG
           value: "netdns=go"
         volumeMounts:
