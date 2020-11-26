@@ -15,10 +15,7 @@ spec:
     targetPort: 7054
     port: 30054
     name: grpc
-status:
-  loadBalancer:
-    ingress:
-    - ip: 10.128.0.3
+
 ---
 apiVersion: v1
 kind: Service
@@ -36,10 +33,7 @@ spec:
     targetPort: 7050
     port: 7050
     name: grpc
-status:
-  loadBalancer:
-    ingress:
-    - ip: 10.128.0.3
+
 ---
 apiVersion: v1
 kind: Service
@@ -62,10 +56,7 @@ spec:
     targetPort: 7052
     port: 7052
     name: events
-status:
-  loadBalancer:
-    ingress:
-    - ip: 10.128.0.3
+
 ---
 apiVersion: v1
 kind: Service
@@ -88,10 +79,7 @@ spec:
     targetPort: 8052
     port: 8052
     name: events
-status:
-  loadBalancer:
-    ingress:
-    - ip: 10.128.0.3
+
 
 ---
 apiVersion: v1
@@ -115,10 +103,7 @@ spec:
     targetPort: 9052
     port: 9052
     name: events
-status:
-  loadBalancer:
-    ingress:
-    - ip: 10.128.0.3
+
 ---
 apiVersion: v1
 kind: Service
