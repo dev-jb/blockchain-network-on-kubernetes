@@ -11,7 +11,7 @@ spec:
     name: ca
   ports:
   - protocol: TCP
-    nodePort: 30054
+    # nodePort: 30054
     targetPort: 7054
     port: 30054
     name: grpc
@@ -29,7 +29,7 @@ spec:
     name: orderer
   ports:
   - protocol: TCP
-    nodePort: 31010
+    # nodePort: 31010
     targetPort: 7050
     port: 7050
     name: grpc
@@ -47,12 +47,12 @@ spec:
     name: org1peer1
   ports:
   - protocol: TCP
-    nodePort: 30110
+    # nodePort: 30110
     targetPort: 7051
     port: 7051
     name: grpc
   - protocol: TCP
-    nodePort: 30111
+    # nodePort: 30111
     targetPort: 7052
     port: 7052
     name: events
@@ -70,12 +70,12 @@ spec:
     name: org2peer1
   ports:
   - protocol: TCP
-    nodePort: 30210
+    # nodePort: 30210
     targetPort: 8051
     port: 8051
     name: grpc
   - protocol: TCP
-    nodePort: 30211
+    # nodePort: 30211
     targetPort: 8052
     port: 8052
     name: events
@@ -94,12 +94,12 @@ spec:
     name: org3peer1
   ports:
   - protocol: TCP
-    nodePort: 30310
+    # nodePort: 30310
     targetPort: 9051
     port: 9051
     name: grpc
   - protocol: TCP
-    nodePort: 30311
+    # nodePort: 30311
     targetPort: 9052
     port: 9052
     name: events
@@ -117,12 +117,12 @@ spec:
     name: org4peer1
   ports:
   - protocol: TCP
-    nodePort: 30410
+    # nodePort: 30410
     targetPort: 10051
     port: 10051
     name: grpc
   - protocol: TCP
-    nodePort: 30411
+    # nodePort: 30411
     targetPort: 10052
     port: 10052
     name: events
