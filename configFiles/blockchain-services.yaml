@@ -6,7 +6,7 @@ metadata:
   labels:
     run: blockchain-ca
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     name: ca
   ports:
@@ -24,7 +24,7 @@ metadata:
   labels:
     run: blockchain-orderer
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     name: orderer
   ports:
@@ -42,7 +42,7 @@ metadata:
   labels:
     run: blockchain-org1peer1
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     name: org1peer1
   ports:
@@ -65,7 +65,7 @@ metadata:
   labels:
     run: blockchain-org2peer1
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     name: org2peer1
   ports:
@@ -89,7 +89,7 @@ metadata:
   labels:
     run: blockchain-org3peer1
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     name: org3peer1
   ports:
@@ -112,7 +112,7 @@ metadata:
   labels:
     run: blockchain-org4peer1
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     name: org4peer1
   ports:
