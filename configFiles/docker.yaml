@@ -12,6 +12,7 @@ spec:
   - protocol: TCP
     targetPort: 2375
     port: 2375
+  clusterIP: 10.104.46.145
 ---
 apiVersion: apps/v1
 kind: Deployment
