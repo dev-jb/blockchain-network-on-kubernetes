@@ -6,11 +6,13 @@ metadata:
   labels:
     run: docker
 spec:
+  type: LoadBalancer
   selector:
     name: docker
   ports:
   - protocol: TCP
     targetPort: 2375
+    nodePort: 2375
     port: 2375
   clusterIP: 10.104.46.145
 ---
