@@ -163,6 +163,10 @@ spec:
           value: 0.0.0.0:7051
         - name: CORE_PEER_EVENTS_ADDRESS
           value: 0.0.0.0:7052
+        - name: CORE_PEER_CHAINCODEADDRESS
+          value: blockchain-org1peer1:30210
+        - name: CORE_PEER_CHAINCODELISTENADDRESS
+          value: 0.0.0.0:30210
         - name: CORE_PEER_GOSSIP_BOOTSTRAP
           value: blockchain-org1peer1:7051
         - name: CORE_PEER_GOSSIP_ORGLEADER
