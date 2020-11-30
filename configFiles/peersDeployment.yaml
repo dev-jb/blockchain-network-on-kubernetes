@@ -207,6 +207,9 @@ spec:
           value: "netdns=go"
         - name: CORE_VM_DOCKER_ATTACHSTDOUT
           value: "true"
+        - name: CORE_CHAINCODE_BUILDER
+          value: hyperledger/fabric-ccenv:1.4.8
+
         volumeMounts:
         - mountPath: /shared
           name: sharedvolume
