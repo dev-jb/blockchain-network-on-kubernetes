@@ -220,7 +220,7 @@ spec:
         - mountPath: /host/var/run/docker.sock
           name: dockersocket
       hostAliases:
-      - ip: "10.104.46.145"
+      - ip: "10.128.0.3"
         hostnames:
         - "docker"
       - ip: "10.106.46.145"
