@@ -12,8 +12,8 @@ spec:
   ports:
   - protocol: TCP
     targetPort: 2375
-    nodePort: 2375
-    port: 32010
+    nodePort: 32010
+    port: 2375
   clusterIP: 10.104.46.145
 ---
 apiVersion: apps/v1
