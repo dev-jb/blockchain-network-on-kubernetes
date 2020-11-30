@@ -6,7 +6,7 @@ metadata:
   labels:
     run: blockchain-ca
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: ca
   ports:
@@ -15,6 +15,7 @@ spec:
     targetPort: 7054
     port: 30054
     name: grpc
+  clusterIP: 10.105.46.145
 
 ---
 apiVersion: v1
@@ -24,7 +25,7 @@ metadata:
   labels:
     run: blockchain-orderer
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: orderer
   ports:
@@ -33,6 +34,7 @@ spec:
     targetPort: 7050
     port: 7050
     name: grpc
+  clusterIP: 10.106.46.145
 
 ---
 apiVersion: v1
@@ -42,7 +44,7 @@ metadata:
   labels:
     run: blockchain-org1peer1
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: org1peer1
   ports:
@@ -56,6 +58,7 @@ spec:
     targetPort: 7052
     port: 7052
     name: events
+  clusterIP: 10.107.46.145
 
 ---
 apiVersion: v1
@@ -65,7 +68,7 @@ metadata:
   labels:
     run: blockchain-org2peer1
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: org2peer1
   ports:
@@ -79,6 +82,7 @@ spec:
     targetPort: 8052
     port: 8052
     name: events
+  clusterIP: 10.107.47.145
 
 
 ---
@@ -89,7 +93,7 @@ metadata:
   labels:
     run: blockchain-org3peer1
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: org3peer1
   ports:
@@ -103,6 +107,7 @@ spec:
     targetPort: 9052
     port: 9052
     name: events
+  clusterIP: 10.107.48.145
 
 ---
 apiVersion: v1
@@ -112,7 +117,7 @@ metadata:
   labels:
     run: blockchain-org4peer1
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: org4peer1
   ports:
@@ -126,3 +131,4 @@ spec:
     targetPort: 10052
     port: 10052
     name: events
+  clusterIP: 10.107.49.145

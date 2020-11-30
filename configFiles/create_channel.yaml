@@ -54,3 +54,7 @@ spec:
         volumeMounts:
         - mountPath: /shared
           name: sharedvolume
+      hostAliases:
+      - ip: "10.106.46.145"
+        hostnames:
+        - "blockchain-orderer"

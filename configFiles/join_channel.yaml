@@ -130,4 +130,19 @@ spec:
         volumeMounts:
         - mountPath: /shared
           name: sharedvolume
-
+      hostAliases:
+      - ip: "10.106.46.145"
+        hostnames:
+        - "blockchain-orderer"
+      - ip: "10.107.46.145"
+        hostnames:
+        - "blockchain-org1peer1"
+      - ip: "10.107.47.145"
+        hostnames:
+        - "blockchain-org2peer1"
+      - ip: "10.107.48.145"
+        hostnames:
+        - "blockchain-org3peer1"
+      - ip: "10.107.49.145"
+        hostnames:
+        - "blockchain-org4peer1"
