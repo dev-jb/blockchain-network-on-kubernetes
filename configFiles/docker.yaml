@@ -38,7 +38,7 @@ spec:
       - name: docker
         securityContext:
           privileged: true
-        image: "docker:18.05.0-dind"
+        image: "docker:19.03.11-dind"
         ports:
         - containerPort: 2375
         volumeMounts:

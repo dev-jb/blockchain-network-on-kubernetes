@@ -19,7 +19,8 @@ spec:
       - name: chaincodeinstantiate
         image: hyperledger/fabric-tools:1.4
         imagePullPolicy: Always
-        command: ["sh", "-c", "peer chaincode instantiate -o blockchain-orderer:7050 -C ${CHANNEL_NAME} -n ${CHAINCODE_NAME} -v ${CHAINCODE_VERSION} -c '{\"Args\":[\"init\",\"a\",\"100\",\"b\",\"200\"]}'"]
+        command: ["sh", "-c", "peer chaincode instantiate -o blockchain-orderer:7050 -C ${CHANNEL_NAME} -n ${CHAINCODE_NAME} -v ${CHAINCODE_VERSION} -c '{\"Args\":[\"init\",\"a\",\"100\",\"b\",\"200\"]}' -P \"OR('Org1MSP.peer')\" "]
+        # command: ["sh", "-c", "peer chaincode instantiate -o blockchain-orderer:7050 -C ${CHANNEL_NAME} -n ${CHAINCODE_NAME} -v ${CHAINCODE_VERSION} -c '{\"Args\":[\"init\",\"a\",\"100\",\"b\",\"200\"]}'"]
         env:
         - name: CHANNEL_NAME
           value: channel1
